@@ -1,0 +1,37 @@
+Q. How did viewing a diff between two versions of a file help you see the bug
+that was introduced?
+
+A. Using diff only shows the differences between two documents. Since differences 
+in the content between the two files is the only content we care about, the diffcommand allows us to focus on potential mistakes or typos within our document.
+
+Q. How could having easy access to the entire history of a file make you a more 
+efficient programmer in the long term?
+
+A. Having a file history allows me to use the diff command to highlight changes (and potential errors) in my document. For example, if I made a typo in my 
+updated document that typo might be more readily found by comparing it to an 
+older version of the file. Moreover, if I really mess up a file, it is useful
+to be able to revert the file back to an older, perhaps more useful state.
+
+Q. What do you think are the pros and cons of manually choosing when to create a commit, like you do in GIT, vs having versions automatically saved, like Google Docs does?
+
+A. Manually choosing when to commit allows the commiter to bundle logical 
+changes into a single commit. This can eliminate a cluttered commit history 
+thereby allowing me to focus on differences which actually matter.
+
+Q. Why do you think some version control systems, like Git, allow saving 
+multiply files in one commit, while others, like Google Docs, treat each file
+separately?
+
+A. In general, google docs files are independent of one another. However, when
+building a big programming project, files are often inter-related. Changing one file can affect another file and so it makes sense for these files to be bundledtogether in a single repository which can be acted upon by a commit.
+
+Q. How can you use the commands git log and git diff to view the history of 
+files?
+
+A. git log will list all commits made on a repo while git diff will compare two
+files highlighting the differences between the two histories. 
+
+Q. How might using version control make you more confident to make changes that could break something?
+
+A. Since version control allows me to checkout earlier commits, I don't need to worry so much about introducing a bug which breaks everything and then is 
+extremely difficult to find. Knowing that I can always 'detach my head' makes meless insecure about introducing bugs and a more confident coder. This allows me to entirely rethink my code base without fear of ruining my project. 
