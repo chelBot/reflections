@@ -1,2 +1,13 @@
-VimCrypt~01!¬0¡¹.Me
-‡ª½::Ê¸ÀN–H­õ©ì;Å3Þ-Ó®)4oý!;87{@Î‡–¨2-r†&—„]¢&0­%ùKÁ™øSë¿7—­E%Z.NwRî&>Š-˜œïÁÒê”…Qd‚ÈˆWe¹7ð-‰ËTfÀ÷*l]]#d2ÆÅáãÀ‡´áÏËPýcª%@Èq‡ü÷A^j,Õ¾V\~âO »ïÎ!7¯M$Z@#Ê*ØˆE\*@Œ5”²ú7?ç#&ø­¥‰é×òôšm8äú˜Ù`I-ÃQ(3Ç”œYçóbžŽ›#·O[U±"$ZÀÐ$.…˜û^2dóJ¢<×ãòú.î¡šóêÂê[ùº!_H³õ%a gv)¨r¥bi½bœ)ÿhZ‹ÝëË-
+Q. What happens when you initialize a repository? Why do you need to do it?
+
+A. Using the command git init to initialize a repository will create an empty 
+repo within your working directory. We can use git add to add files to the 
+staging area before commiting those files to our new repo. We need to do this inorder to store meta data about the history of the repo in hidden .git files.
+
+Q. How is the staging area different from the working directory and the 
+repository? What value do you think it offers? 
+
+The staging area is an intermediate step between the working directory and the 
+repo which gives me more control over which files get bundled together into a 
+single commit into the repo. The rule of thumb is one commit per logical change
+so it makes sense for me to bundle related files into different commit groups. 
