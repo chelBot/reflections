@@ -7,7 +7,24 @@ staging area before commiting those files to our new repo. We need to do this in
 Q. How is the staging area different from the working directory and the 
 repository? What value do you think it offers? 
 
-The staging area is an intermediate step between the working directory and the 
+A. The staging area is an intermediate step between the working directory and the 
 repo which gives me more control over which files get bundled together into a 
 single commit into the repo. The rule of thumb is one commit per logical change
 so it makes sense for me to bundle related files into different commit groups. 
+
+Q. How can you use the staging area to make sure you have one commit per logical change?
+
+A. You can bundle logical changes by adding the files that needed to be modified for the change to the staging area before committing those files to the repo. 
+
+Q. What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+
+A. Branches are helpful when I want to add experimental features or different 
+versions of my project but I want to tweak the architecture of the code base in my main branch. Branches allow me to drastically change a projects underlying 
+structure if need be without mucking up the main branch or having to search 
+through my commits to find older versions of a file.
+
+Q. How do the diagrams help you visualize the branch structure?
+
+A. Diagrams help me visualize the branch structure by illustrating at which 
+commits we branched off from. Diagrams also illustrate each commits parent. 
