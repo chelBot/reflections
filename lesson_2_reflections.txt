@@ -28,3 +28,11 @@ Q. How do the diagrams help you visualize the branch structure?
 
 A. Diagrams help me visualize the branch structure by illustrating at which 
 commits we branched off from. Diagrams also illustrate each commits parent. 
+
+Q. What is the result of merging two branches together? Why do we represent it
+in the diagram the way we do?
+
+A. Merging two branches together combines all commits into a single branch 
+sorted by timestamp. Preforming a merge creates a new commit that becomes the 
+head of the branch. We represent this new merge commit as a node pointing to theheads of each old branchs because these old heads are the parent nodes to the 
+merge commit (hence no commit in the two previous branchs are unreachable).
