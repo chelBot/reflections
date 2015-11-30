@@ -36,3 +36,13 @@ A. Merging two branches together combines all commits into a single branch
 sorted by timestamp. Preforming a merge creates a new commit that becomes the 
 head of the branch. We represent this new merge commit as a node pointing to theheads of each old branchs because these old heads are the parent nodes to the 
 merge commit (hence no commit in the two previous branchs are unreachable).
+
+Q. What are the pros and cons of Git's automatic merging vs. always doing mergesmanually?
+
+A. automatic merging is convenient because it saves the coder from having to 
+go through each change in order to decide which ones to keep. However, if a 
+merge conflict has arises then the merge must be done manually because this 
+generally means that both coders have changed the same lines of code.
+Automatically determining which changes to keep in this scenario would require
+advanced A.I. algorithms that may be prone to error. A manual commit in this 
+case is the safer bet.
